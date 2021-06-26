@@ -3,26 +3,26 @@ import './TopBar.css'
 
 const TopBar = () => {
     return (
-        <div className="h-12 bg-yellow-400 sticky top-0 flex">
-            <div className="flex-1 flex justify-center cursor-pointer">
-                <i className="fab fa-facebook-square inline-block px-5 text-4xl self-center "></i>
-                <i className="fab fa-instagram-square inline-block px-5 text-4xl self-center "></i>
-                <i className="fab fa-github-square inline-block px-5 text-4xl self-center "></i>
-                <i className="fab fa-medium inline-block px-5 text-4xl self-center "></i>
+        <div className="sticky top-0 flex h-12 bg-gray-200">
+            <div className="flex justify-center flex-1 cursor-pointer">
+                <i className="self-center inline-block px-5 text-4xl fab fa-facebook-square "></i>
+                <i className="self-center inline-block px-5 text-4xl fab fa-instagram-square "></i>
+                <i className="self-center inline-block px-5 text-4xl fab fa-github-square "></i>
+                <i className="self-center inline-block px-5 text-4xl fab fa-medium "></i>
             </div>
 
-            <ul className="flex-1 flex text-lg font-light">
-                <li className="flex-auto self-center cursor-pointer">HOME</li>
-                <li className="flex-auto self-center cursor-pointer">ABOUT</li>
-                <li className="flex-auto self-center cursor-pointer">CONTACT</li>
-                <li className="flex-auto self-center cursor-pointer">WRITE</li>
-                <li className="flex-auto self-center cursor-pointer">LOGOUT</li>
+            <ul className="flex flex-1 text-lg font-light font-medium font-josefin">
+                <li className="self-center flex-auto cursor-pointer">HOME</li>
+                <li className="self-center flex-auto cursor-pointer">ABOUT</li>
+                <li className="self-center flex-auto cursor-pointer">CONTACT</li>
+                <li className="self-center flex-auto cursor-pointer">WRITE</li>
+                <li className="self-center flex-auto cursor-pointer">LOGOUT</li>
             </ul>
 
-            <div className="flex-1 flex justify-center">
-                <img className="object-contain h-full mr-5 pt-1 pb-1 rounded-full object-center cursor-pointer" src="https://image.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg" alt="profile icon thumbnail" />
-                <span className="inline-block self-center ml-5 cursor-pointer">
-                    <i className="fas fa-search text-lg  text-gray-600"></i>
+            <div className="flex justify-center flex-1">
+                <img className="object-contain object-center h-full pt-1 pb-1 mr-5 rounded-full cursor-pointer" src="https://image.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg" alt="profile icon thumbnail" />
+                <span className="self-center inline-block ml-5 cursor-pointer">
+                    <i className="text-lg text-gray-600 fas fa-search"></i>
                 </span>
             </div>
         </div>
