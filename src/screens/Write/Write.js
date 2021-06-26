@@ -12,12 +12,12 @@ const Write = () => {
             <form className="grid grid-cols-1 mt-16 md:grid-cols-5 ">
                 <div className="col-span-4">
                     <div className="flex">
-                        <label htmlFor="fileInput" className="flex items-center self-center justify-center w-8 h-8 p-1 mr-10 text-2xl border-2 border-gray-400 rounded-full cursor-pointer">
+                        <label htmlFor="fileInput" className="flex items-center self-center justify-center w-8 h-8 p-1 mr-4 text-2xl border-2 border-gray-400 rounded-full cursor-pointer">
                             <i className="fas fa-plus"></i>
                         </label>
                         <input className="hidden" id="fileInput" type="file" />
                         <input
-                            className="self-center w-full px-3 py-2 border-b-2 border-indigo-400"
+                            className="self-center w-full px-4 py-2 text-lg border-b border-gray-300 rounded-full focus:outline-none focus:border-green-500"
                             placeholder="Title"
                             type="text"
                             autoFocus={true}
@@ -25,7 +25,7 @@ const Write = () => {
                     </div>
                     <div className="w-full mt-7">
                         <textarea
-                            className="w-full px-3 py-2 border-b-2 border-indigo-400 "
+                            className="w-full px-8 py-8 text-lg border-b border-gray-300 rounded-md lineHeight focus:outline-none focus:border-green-500"
                             placeholder="Tell your story..."
                             type="text"
                             autoFocus={true}
