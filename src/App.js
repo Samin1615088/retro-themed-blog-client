@@ -1,14 +1,15 @@
-import './App.css';
-import TopBar from './components/TopBar/TopBar'
-import Home from './screens/Home/Home'
-import Single from './screens/Single/Single'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import './App.css';
+import TopBar from './components/TopBar/TopBar'
+import Home from './screens/Home/Home'
+import Single from './screens/Single/Single'
 import Write from './screens/Write/Write';
+import Login from './screens/Login/Login';
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
           </Route>
           <Route path="/write">
             <Write />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <Home />
