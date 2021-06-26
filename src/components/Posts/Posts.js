@@ -19,7 +19,7 @@ const Posts = () => {
     console.log(posts);
 
     return (
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 font-varelaRound">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 font-varelaRound">
             {
                 posts?.map( post => <Post key={post._id} post={post}/>)
             }
