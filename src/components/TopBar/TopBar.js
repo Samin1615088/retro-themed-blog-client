@@ -20,7 +20,9 @@ const TopBar = () => {
                     <Link to="/about">ABOUT</Link>
                 </li>
                 <li className="self-center flex-auto cursor-pointer">CONTACT</li>
-                <li className="self-center flex-auto cursor-pointer">WRITE</li>
+                <li className="self-center flex-auto cursor-pointer">
+                    <Link to="/write">WRITE</Link>
+                </li>
                 <li className="self-center flex-auto cursor-pointer">LOGOUT</li>
             </ul>
 

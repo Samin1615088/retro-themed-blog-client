@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Write from './screens/Write/Write';
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
         <Switch>
           <Route path="/single">
             <Single />
+          </Route>
+          <Route path="/write">
+            <Write />
           </Route>
           <Route path="/">
             <Home />
