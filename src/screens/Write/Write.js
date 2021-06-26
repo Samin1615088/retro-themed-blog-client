@@ -12,7 +12,7 @@ const Write = () => {
             <form className="grid grid-cols-1 mt-16 md:grid-cols-5 ">
                 <div className="col-span-4">
                     <div className="flex">
-                        <label htmlFor="fileInput" className="flex items-center self-center justify-center w-8 h-8 p-1 mr-4 text-2xl border-2 border-gray-400 rounded-full cursor-pointer">
+                        <label htmlFor="fileInput" className="flex items-center self-center justify-center w-8 h-8 p-1 mr-4 text-2xl text-green-500 border-2 border-green-500 rounded-full cursor-pointer">
                             <i className="fas fa-plus"></i>
                         </label>
                         <input className="hidden" id="fileInput" type="file" />

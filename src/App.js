@@ -2,39 +2,45 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import './App.css';
+import { createContext } from "react";
+
 import TopBar from './components/TopBar/TopBar'
 import Home from './screens/Home/Home'
 import Single from './screens/Single/Single'
 import Write from './screens/Write/Write';
 import Login from './screens/Login/Login';
 
+export const UserContext = createContext();
+
 export default function App() {
-  const user = false;
+  const loginStatus = {
+    isLoggedIn: true
+  };
 
   return (
     <Router>
-      <div>
-        <TopBar />
-        <Switch>
-          <Route path="/post/:postId">
-            <Single />
-          </Route>
-          <Route path="/write">
-            {
-              user ? <Write /> : <Login />
-            }
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+      <UserContext.Provider value={loginStatus} >
+        <div>
+          <TopBar />
+          <Switch>
+            <Route path="/post/:postId">
+              <Single />
+            </Route>
+            <Route path="/write">
+              {
+                loginStatus.isLoggedIn ? <Write /> : <Login />
+              }
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </UserContext.Provider>
     </Router>
   );
 }

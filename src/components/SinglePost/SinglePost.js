@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const SinglePost = () => {
     return (
@@ -21,9 +22,9 @@ const SinglePost = () => {
                     <span>
                         Author:
                         <b className="mx-2">
-                            <a className="a" to="/posts?username=Safak">
+                            <Link to="/posts?username=Safak">
                                 Safak
-                            </a>
+                            </Link>
                         </b>
                     </span>
                     <span>1 day ago</span>
