@@ -3,7 +3,7 @@ import './TopBar.css'
 
 const TopBar = () => {
     return (
-        <div className="sticky top-0 z-50 flex flex-col bg-gray-200 md:h-12 md:flex-row h-44">
+        <div className="top-0 z-50 flex flex-col bg-gray-200 md:sticky md:h-12 md:flex-row h-44">
             <div className="flex justify-center flex-1 cursor-pointer">
                 <i className="self-center inline-block px-5 text-4xl fab fa-facebook-square "></i>
                 <i className="self-center inline-block px-5 text-4xl fab fa-instagram-square "></i>
@@ -20,7 +20,7 @@ const TopBar = () => {
             </ul>
 
             <div className="flex justify-center flex-1">
-                <img className="object-contain object-center h-full pt-1 pb-1 mr-5 rounded-full cursor-pointer" src="https://image.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg" alt="profile icon thumbnail" />
+                <img className="object-contain object-center w-16 pt-1 pb-1 mr-5 rounded-full cursor-pointer md:h-full" src="https://image.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg" alt="profile icon thumbnail" />
                 <span className="self-center inline-block ml-5 cursor-pointer">
                     <i className="text-lg text-gray-600 fas fa-search"></i>
                 </span>
