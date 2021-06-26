@@ -12,16 +12,20 @@ import Write from './screens/Write/Write';
 import Login from './screens/Login/Login';
 
 export default function App() {
+  const user = false;
+
   return (
     <Router>
       <div>
         <TopBar />
         <Switch>
-          <Route path="/single">
+          <Route path="/post/:postId">
             <Single />
           </Route>
           <Route path="/write">
-            <Write />
+            {
+              user ? <Write /> : <Login />
+            }
           </Route>
           <Route path="/login">
             <Login />

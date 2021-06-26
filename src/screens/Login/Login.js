@@ -3,7 +3,7 @@ import React from 'react';
 const Login = () => {
     return (
         <div className="flex flex-col w-full h-screen p-5 xl:w-1/2 xl:mx-auto">
-            <span className="mt-64 text-center text-7xl font-lora">Login</span>
+            <span className="mt-64 text-center text-7xl font-lora">Admin Login</span>
             <form className="flex flex-col pt-16 lg:w-1/2 lg:mx-auto">
                 <label className="mb-2 ml-2 font-bold tracking-wide text-gray-700 text-md">Email</label>
                 <input className="w-full px-4 py-2 text-lg border-b border-gray-300 rounded-full focus:outline-none focus:border-indigo-500" type="text" placeholder="Enter your email..." />

@@ -19,11 +19,15 @@ const TopBar = () => {
                 <li className="self-center flex-auto cursor-pointer">
                     <Link to="/about">ABOUT</Link>
                 </li>
-                <li className="self-center flex-auto cursor-pointer">CONTACT</li>
+                <li className="self-center flex-auto cursor-pointer">
+                    <Link to="/contact">CONTACT</Link>
+                </li>
                 <li className="self-center flex-auto cursor-pointer">
                     <Link to="/write">WRITE</Link>
                 </li>
-                <li className="self-center flex-auto cursor-pointer">LOGOUT</li>
+                <li className="self-center flex-auto cursor-pointer">
+                    <Link to="/logout">LOGOUT</Link>
+                </li>
             </ul>
 
             <div className="flex justify-center flex-1">
