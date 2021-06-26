@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { UserContext } from '../../App';
 
 const TopBar = () => {
-    const user = useContext(UserContext);
-    console.log(user)
+    // const [userStatus, setUserStatus] = useContext(UserContext);
+    
     return (
         <div className="top-0 z-50 flex flex-col flex-grow bg-gray-200 md:sticky md:h-12 md:flex-row h-96">
             <div className="flex justify-center flex-shrink cursor-pointer">
@@ -21,16 +21,17 @@ const TopBar = () => {
                 <li className="self-center flex-auto px-2 cursor-pointer">
                     <Link to="/about">ABOUT</Link>
                 </li>
-                <li className="self-center flex-auto px-2 cursor-pointer">
+                {/* <li className="self-center flex-auto px-2 cursor-pointer">
                     <Link to="/contact">CONTACT</Link>
-                </li>
+                </li> */}
                 <li className="self-center flex-auto px-2 cursor-pointer">
                     <Link to="/write">WRITE</Link>
                 </li>
+
                 <li className="self-center flex-auto px-2 cursor-pointer">
-                    <Link to="/logout">LOGOUT</Link>
+                    {/* <Link to="/logout">LOGOUT</Link> */}
                     {/* {
-                        user.isLoggedIn ? <Link to="/logout">LOGOUT</Link> : <Link to="/login">ADMIN LOGIN</Link>
+                        userStatus.isLoggedIn ? <Link to="/logout">LOGOUT</Link> : <Link to="/login">ADMIN LOGIN</Link>
                     } */}
                 </li>
             </ul>
