@@ -8,7 +8,7 @@ const SinglePost = () => {
                 src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 alt=""
             />
-            <div className="px-10">
+            <div className="px-1 md:px-10">
 
                 <div className="flex content-center justify-center font-lora ">
                     <h1 className="py-10 text-5xl font-bold capitalize">Lorem ipsum dolor</h1>

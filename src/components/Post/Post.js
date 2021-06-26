@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Post = ({ img }) => {
     return (
@@ -11,20 +12,20 @@ const Post = ({ img }) => {
             <div className="flex flex-col content-center justify-center p-5">
                 <div className="flex flex-row justify-center font-semibold text-indigo-600 font-varelaRound">
                     <span className="px-2">
-                        <a className="a" to="/posts?cat=Music">
+                        <Link className="a" to="/posts?cat=Music">
                             Music
-                        </a>
+                        </Link>
                     </span>
                     <span className="px-2">
-                        <a className="a" to="/posts?cat=Music">
+                        <Link className="a" to="/posts?cat=Music">
                             Life
-                        </a>
+                        </Link>
                     </span>
                 </div>
                 <span className="mt-5 font-bold font-josefin">
-                    <a to="/post/abc" className="text-2xl uppercase">
+                    <Link to="/post/abc" className="text-2xl uppercase">
                         this is title
-                    </a>
+                    </Link>
                 </span>
                 <hr />
                 <span className="text-gray-200 font-lora">1 hour ago</span>
